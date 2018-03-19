@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html,body{
+    font-family: "Microsoft YaHei","微软雅黑";
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+/*定义背景图片*/
+.bg1{background-image: url("../img/1.jpg");}
+.bg2{background-image: url("../img/2.jpg");}
+.bg3{background-image: url("../img/3.jpg");}
+.bg4{background-image: url("../img/4.jpg");}
+.bg5{background-image: url("../img/5.jpg");}
+.bg6{background-image: url("../img/6.jpg");}
+.bg7{background-image: url("../img/7.jpg");}
+.bg8{background-image: url("../img/8.jpg");}
+.bg9{background-image: url("../img/9.jpg");}
+.bg10{background-image: url("../img/10.jpg");}
+.bg11{background-image: url("../img/11.jpg");}
+.bg12{background-image: url("../img/12.jpg");}
+.bg13{background-image: url("../img/13.jpg");}
+.bg14{background-image: url("../img/14.jpg");}
+.bg15{background-image: url("../img/15.jpg");}
+.bg16{background-image: url("../img/16.jpg");}
+.bg17{background-image: url("../img/17.jpg");}
+.bg18{background-image: url("../img/18.jpg");}
+.bg19{background-image: url("../img/19.jpg");}
+.bg20{background-image: url("../img/20.jpg");}
+
+
+/*首页样式*/
+.title{
+    margin: 50px 0;
+    text-align: center;
+    letter-spacing: 5px;/**设置字体的间距*/
+}
+.main{
+    width: 500px;
+    margin: 100px auto;
+}
+.main a,.dialog a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    /**CSS3 背景(线性)渐变样式**/
+    background: linear-gradient(to bottom,#E2F3D8,#70C73C);
+    /*CSS3 盒子阴影*/
+    box-shadow:0 0 0 2px #75DB31; /* 0 x轴偏移位置 ，0 y轴偏移位置 ，0 模糊的程度 ，2px 阴影大小 ，颜色*/
+}
+.main a:hover{
+    /**CSS3 背景(线性)渐变样式**/
+    background: linear-gradient(to bottom,#F6FDF2,#B0EB88);
+    /*CSS3 盒子阴影*/
+    box-shadow:0 0 0 2px #AFEB85; /* 0 x轴偏移位置 ，0 y轴偏移位置 ，0 模糊的程度 ，2px 阴影大小 ，颜色*/
+
+}
+
+.clack{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -260px;
+    margin-top: -270px;
+    width: 480px;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+.dialog .info{
+    line-height: 25px;
+    height: 400px;
+    overflow: auto;
+}
+.dialog .options{
+    text-align: center;
+}
+.dialog a{
+     display: inline-block;
+     /**CSS3 背景(线性)渐变样式**/
+     background: linear-gradient(to bottom,#DEEFF4,#65B2D4);
+     /*CSS3 盒子阴影*/
+     box-shadow:0 0 0 2px #0D77A4; /* 0 x轴偏移位置 ，0 y轴偏移位置 ，0 模糊的程度 ，2px 阴影大小 ，颜色*/
+
+ }
+.dialog a:hover{
+    /**CSS3 背景(线性)渐变样式**/
+    background: linear-gradient(to bottom,#F7FBFC,#A2D1E4);
+    /*CSS3 盒子阴影*/
+    box-shadow:0 0 0 2px #5EABCA; /* 0 x轴偏移位置 ，0 y轴偏移位置 ，0 模糊的程度 ，2px 阴影大小 ，颜色*/
+
+}
+
+/*游戏界面样式*/
+.top{
+    text-align: center;
+    margin-top: 30px;
+}
+.top .level{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #FEFBF7;
+    border-radius: 8px;
+}
+.top .menu{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #EE7700;
+    box-shadow: 0 0 0 3px #FEB367;
+    border-radius: 20px;
+    line-height: 40px;
+    margin-left: 100px;
+    text-align: center;
+    color: #000;
+    background: linear-gradient(to right bottom,#FFF7EF,#FECA96);
+}
+#play{
+    display: inline-block;
+    width: 100px;
+    height: 105px;
+    background-image: url("../img/btn-bg.png");
+    margin-left: 50%;
+    margin-top: 20px;
+}
+.container{
+    position: fixed;
+    bottom: 0;
+    height: 35%;
+}
+.well-box{
+    position: absolute;
+    height: 100%;
+}
+.well-box .well{
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    background-color: #000;
+}
+.man{
+    position: absolute;
+    bottom: 96%;
+    left: 45px;
+}
+.man.down{
+    left: 140px;
+    bottom: 2%;
+    transition: all 1s;
+    transform: rotate(-990deg);
+}
+.stick{
+    position: absolute;
+    bottom: 100%;
+    height: 5px;
+    /*width: 200px;*/
+    left: 100px;
+    background-color: green;
+    /*CSS3 设置旋转中心*/
+    transform-origin:left 100%;
+    /*CSS3 旋转样式*/
+    transform: rotate(-90deg);
+    /*CSS3 过渡动画*/
+    transition:transform 0.6s;
+}
+/*棍子倒下样式*/
+.stick.down{
+    /*CSS3 旋转样式*/
+    transform: rotate(0deg);
+}
